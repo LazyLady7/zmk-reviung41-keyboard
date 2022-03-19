@@ -78,7 +78,7 @@
                         bindings = <
    &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
    &kp CAPS  &kp N4  &kp N5    &kp N6    &trans    &trans           &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
-   &trans  &kp N7    &kp N8    &kp N9    &kp N0    &rgb_ug RGB_TOG    &rgb_ug RGB_COLOR_HSB(205,97,59)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
+   &trans  &kp N7    &kp N8    &kp N9    &kp N0    &rgb_ug RGB_TOG    &rgb_ug RGB_COLOR_HSB(219,97,44)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
                                &kp LBKT  &kp RBKT  &bt BT_CLR    &kp UP    &kp DOWN
                         >;
                 };
