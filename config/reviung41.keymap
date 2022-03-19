@@ -44,46 +44,6 @@
    };
 };
 
-// For QMK:
-// KC_NONUS_BSLASH (\|) is equivalent to ["é] key in Turkish keyboards.
-// KC_GRV (~ `) is equivalent to [<>|] key in Turkish keyboards.
-// KC_SCLN is Turkish s [şŞ] key
-// KC_QUOT is Turkish i [iİ] key
-// KC_COMM is Turkish o [öÖ] key
-// KC_DOT is Turkish c [çÇ] key
-
-// For ZMK:
-// NON_US_BACKSLASH (\|) is equivalent to ["é] key in Turkish keyboards.
-// GRAVE (~ `) is equivalent to [<>|] key in Turkish keyboards.
-// SEMI (;) is Turkish s [şŞ] key
-// SQT (') is Turkish i [iİ] key
-// COMMA (,) is Turkish o [öÖ] key
-// DOT (.) is Turkish c [çÇ] key
-// FSLH (/) is Turkish dot [.:] key
-// BSLH (\) is Turkish comma (,;) key
-
-// Custom shortcuts specific to Turkish layout
-#define _CURLY_OPEN RA(N7)
-#define _CURLY_CLOSE RA(N0)
-#define _AT_SIGN RA(Q)
-#define _SQUARE_OPEN RA(N8)
-#define _SQUARE_CLOSE RA(N9)
-#define _DOLLAR_SIGN RA(N4)
-#define _BACKSLASH RA(MINUS)
-#define _VERTICAL_PIPE RA(EQUAL)
-#define _BACKTICK RA(BACKSLASH)
-#define _TILDE RA(RIGHT_BRACKET)
-#define _NUMBER_SIGN RA(N3) //hashtag sign
-#define _LOCKSCREEN LC(LS(C_PWR)) // Screen Lock shortcut for OSX
-
-// Layers
-#define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
-#define _SPACE 3
-#define _NUMPAD 4
-// #define _SODA 5
-#define _ADJUST 5
 
 
 /*
@@ -118,7 +78,7 @@
                         bindings = <
    &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
    &kp CAPS  &kp N4  &kp N5    &kp N6    &trans    &trans           &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
-   &trans  &kp N7    &kp N8    &kp N9    &kp N0    &rgb_ug RGB_TOG    &trans    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
+   &trans  &kp N7    &kp N8    &kp N9    &kp N0    &rgb_ug RGB_TOG    &rgb_ug RGB_COLOR_HSB(40,149,214)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
                                &kp LBKT  &kp RBKT  &bt BT_CLR    &kp UP    &kp DOWN
                         >;
                 };
