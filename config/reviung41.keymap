@@ -50,7 +50,6 @@
  * Temporarily here because nice nano v2 spi is not defined on ZMk YET
  */
 
-
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -72,12 +71,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |BT CLR|
-// | CAP |     |     |     |     |     |     |     |  4  |  5  |  6  |  '  |  +   |
+// | CAP |TOG 1|     |     |     |     |     |     |  4  |  5  |  6  |  '  |  +   |
 // |     |VOL- |VOL+ |     |     | RGB |     |COLR |  1  |  2  |  3  |  ~  |      |
 //                         |  {  |  }  |     |  UP | DWN |
                         bindings = <
    &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &bt BT_CLR
-   &kp CAPS  &trans  &trans    &trans    &trans    &trans             &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
+   &kp CAPS  &tog 1  &trans    &trans    &trans    &trans             &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
    &trans  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &rgb_ug RGB_TOG    &rgb_ug RGB_COLOR_HSB(219,97,44)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
                                &kp LBKT  &kp RBKT  &trans    &kp UP    &kp DOWN
                         >;
