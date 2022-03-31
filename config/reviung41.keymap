@@ -54,8 +54,8 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 11>;
+            timeout-ms = <1000>;
+            key-positions = <0 1>;
             bindings = <&tog 1>;
         };
     };
