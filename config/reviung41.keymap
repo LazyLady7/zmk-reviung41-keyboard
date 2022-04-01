@@ -50,16 +50,6 @@
  * Temporarily here because nice nano v2 spi is not defined on ZMk YET
  */
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <1000>;
-            key-positions = <0 18>;
-            bindings = <&tog 1>;
-        };
-    };
-};
 
 / {
         keymap {
