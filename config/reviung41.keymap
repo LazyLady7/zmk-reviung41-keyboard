@@ -61,29 +61,29 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |ESC/~1|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP/~1   |
-// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    -      |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
-//                          | CMD | ENT | SPC | <-  | -> |
+// |TAB/~1 |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP/~1   |
+// | SHFT  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  | SHFT(RET)  |
+// | LCTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |    ;      |
+//                          | CMD | ALT | <- |  SPC  | -> |
                         bindings = <
-   &lt 1 ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &lt 1 BSPC
-   &kp LSHFT   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp MINUS
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                         &kp LGUI  &kp RET   &kp SPACE &kp LEFT  &kp RIGHT
+   &lt 1 TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &lt 1 BSPC
+   &kp LSHFT   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT &mt RSHFT RET
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp SEMI
+                         &kp LGUI  &kp LALT   &kp LEFT &kp SPACE  &kp RIGHT
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3   |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |      |
-// | CAP |     |     |      |     |     |     |     |  4  |  5  |  6  |  '  |  +   |
-// |     |VOL- |VOL+ |      |     | CLR |     |COLR |  1  |  2  |  3  |  ~  |      |
-//                          |  {  |  }  |     |  UP | DWN |
+// | ESC |RGB ON|RGB OFF|RGB FW |COLR |     |     |  \  |  7  |  8  |  9  |  0  |      |
+// | CAP |      |       |       |     |     |     |  +  |  4  |  5  |  6  |  '  |  +   |
+// |     |VOL-  |VOL+   |       |     | CLR |     |  -  |  1  |  2  |  3  |  ~  |      |
+//                          |  {  |  }  |  UP  |     | DWN |
                         bindings = <
-   &trans &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &trans    &trans    &trans             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &trans
-   &kp CAPS  &trans  &trans    &trans    &trans    &trans             &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
-   &kp TAB  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &bt BT_CLR    &rgb_ug RGB_COLOR_HSB(219,97,44)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
-                               &kp LBKT  &kp RBKT  &trans    &kp UP    &kp DOWN
+   &trans &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(219,97,44)    &trans             &kp BSLH    &kp N7    &kp N8    &kp N9    &kp N0     &trans
+   &kp LSHFT  &trans  &trans    &trans    &trans    &trans             &kp EQUAL    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
+   &kp CAPS  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &bt BT_CLR    &kp MINUS    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
+                               &kp LBKT  &kp RBKT  &kp UP    &trans    &kp DOWN
                         >;
                 };
         };
