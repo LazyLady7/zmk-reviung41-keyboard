@@ -80,9 +80,9 @@
 // |     |VOL- |VOL+ |      |     | CLR |     |COLR |  1  |  2  |  3  |  ~  |      |
 //                          |  {  |  }  |     |  UP | DWN |
                         bindings = <
-   &trans &kp N1    &kp N2    &kp N3    &kp N4    &kp N5             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &trans
+   &trans &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &trans    &trans    &trans             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &trans
    &kp CAPS  &trans  &trans    &trans    &trans    &trans             &trans    &kp N4    &kp N5    &kp N6    &kp SQT    &kp EQUAL
-   &trans  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &bt BT_CLR    &rgb_ug RGB_COLOR_HSB(219,97,44)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
+   &kp TAB  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &bt BT_CLR    &rgb_ug RGB_COLOR_HSB(219,97,44)    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
                                &kp LBKT  &kp RBKT  &trans    &kp UP    &kp DOWN
                         >;
                 };
