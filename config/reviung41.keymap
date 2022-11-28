@@ -60,31 +60,30 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -------------------------------------------------------------------------------------
-// |ESC/~1 |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP/~1   |
-// | SHFT  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  | SHFT(RET)  |
-// | LCTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |    ;      |
-//                          | CMD | TAB/~1 | SPC |  <-  | -> |
-                        bindings = <
-   &lt 1 ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &lt 1 BSPC
+            bindings = <
+            &lt 1 ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &lt 1 BSPC
    &kp LSHFT   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT &mt RSHFT RET
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp SEMI
-                         &kp LGUI  &lt 1 TAB   &kp SPACE &kp LEFT  &kp RIGHT
-                        >;
-                };
+                         &mo 1  &lt 1 TAB   &kp SPACE &kp LEFT  &mo 2
+            >;
+        };
 
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// | ESC |RGB ON|RGB OFF|RGB FW |COLR |     |     |  \  |  7  |  8  |  9  |  0  | DEL  |
-// | SFT | TAB  |  ALT  |       |     |     |     |  +  |  4  |  5  |  6  |  {  |  }   |
-// | CTRL|VOL-  |VOL+  |       |     | CLR |     |  -  |  1  |  2  |  3  |  ~  |      |
-//                          | CAP |     |      |  UP  | DWN |
-                        bindings = <
-   &trans     &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(219,97,44)    &trans             &kp BSLH    &kp N7    &kp N8    &kp N9    &kp N0     &kp DEL
+        upper_layer {
+            bindings = <
+            &lt 1 ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp UP     &kp O   &kp P    &lt 1 BSPC
+   &kp LSHFT   &kp A &kp S &kp D &kp F &kp G   &kp H &kp LEFT  &kp DOWN     &kp RIGHT   &kp SQT &mt RSHFT RET
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp SEMI
+                         &mo 1  &lt 1 TAB   &kp SPACE &kp LEFT  &mo 2
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+            &trans     &rgb_ug RGB_ON    &rgb_ug RGB_OFF    &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(219,97,44)    &trans             &kp BSLH    &kp N7    &kp N8    &kp N9    &kp N0     &kp DEL
    &kp LSHFT  &kp TAB  &kp LALT    &trans    &trans    &trans             &kp EQUAL    &kp N4    &kp N5    &kp N6    &kp LBKT    &kp RBKT
    &kp LCTRL  &kp C_VOL_DN     &kp C_VOL_UP   &trans    &trans    &bt BT_CLR    &kp MINUS    &kp N1    &kp N2    &kp N3    &kp TILDE    &trans
                                &kp CAPS  &trans  &trans    &kp UP    &kp DOWN
-                        >;
-                };
+            >;
         };
+    };
 };
