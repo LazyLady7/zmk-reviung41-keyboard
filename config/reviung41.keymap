@@ -79,10 +79,10 @@
 
         lower_layer {
             bindings = <
-            &kp CAPS   &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF    &rgb_ug RGB_COLOR_HSB(219,97,44)   &trans      &kp BSLH    &kp N7    &kp N8    &kp N9    &kp N0     &kp BSPC
-            &kp LSHFT  &kp F1          &kp F2           &kp F3             &trans                             &trans      &kp EQUAL   &kp N4    &kp N5    &kp N6    &kp LBKT   &kp RBKT
-            &kp LALT   &kp C_MUTE      &kp C_VOL_DN     &kp C_VOL_UP       &trans                             &bt BT_CLR  &kp MINUS   &kp N1    &kp N2    &kp N3    &kp TILDE  &kp DEL
-                                                        &kp LGUI           &trans                             &trans      &trans      &trans
+            &kp CAPS   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF    &trans   &bt BT_CLR   &kp BSLH    &kp N7    &kp N8    &kp N9    &kp N0     &kp BSPC
+            &kp LSHFT  &kp F1          &kp F2           &kp F3             &trans   &kp LBRC     &kp EQUAL   &kp N4    &kp N5    &kp N6    &kp LBKT   &kp RBKT
+            &kp LALT   &kp C_MUTE      &kp C_VOL_DN     &kp C_VOL_UP       &trans   &kp RBRC     &kp MINUS   &kp N1    &kp N2    &kp N3    &kp TILDE  &kp DEL
+                                                        &kp LGUI           &trans   &trans       &trans      &trans
 
             >;
         };
